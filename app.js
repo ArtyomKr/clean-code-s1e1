@@ -10,8 +10,8 @@
 
 var taskInput=document.getElementById("task-input__text");//Add a new task.
 var addButton=document.querySelectorAll(".button")[0];//first button
-var incompleteTaskHolder=document.getElementById("todo-tasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.querySelector(".todo-tasks");//ul of #incompleteTasks
+var completedTasksHolder=document.querySelector(".completed-tasks");//completed-tasks
 
 
 //New task list item
@@ -181,20 +181,9 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
   bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
 }
 
-
-
-
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
   //bind events to list items chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 
-
-
-
-// Issues with usability don't get seen until they are in front of a human tester.
-
-//prevent creation of empty tasks.
-
-//Change edit to save when you are in edit mode.
