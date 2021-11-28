@@ -53,6 +53,7 @@ input,button{
 
 .task-input {
   display: flex;
+  padding-bottom: 16px;
 }
 
 .button {
