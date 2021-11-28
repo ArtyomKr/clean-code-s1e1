@@ -98,7 +98,6 @@ input,button{
 
 .main__title:first-child {
   display: block;
-  margin: 0 0 20px;
 }
 
 #task-input__text {
