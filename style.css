@@ -45,6 +45,10 @@ input,button{
   margin: 0 auto 0;
 }
 
+.section:first-child {
+  padding-top: 16px;
+}
+
 .task__name {
   width: 56%;
   display: inline-block;
@@ -53,7 +57,7 @@ input,button{
 
 .task-input {
   display: flex;
-  padding-bottom: 16px;
+  padding: 20px 0 16px 0;
 }
 
 .button {
@@ -70,7 +74,7 @@ input,button{
   color: #3a3a3a;
 }
 
-.main__title {
+.section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -97,7 +101,7 @@ input,button{
   color: #333;
 }
 
-.main__title:first-child {
+.section__title:first-child {
   display: block;
 }
 
